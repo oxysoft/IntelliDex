@@ -1,0 +1,12 @@
+﻿{
+	"ID": "6B1DE1F24A44478F817672BEC0A0D0B6",
+	"ActionKeyword": "dex",
+	"Name": "IntelliDex",
+	"Description": "An intelligent Pokedex-like querying tool built for Pokemon fans",
+	"Author": "oxysofts",
+	"Version": "1.0.0",
+	"Language": "csharp",
+	"Website": "https://github.com/oxysoft/Wox.Plugin.IntelliDex",
+	"IcoPath": "Images\\pic.png",
+	"ExecuteFileName": "IntelliDex.dll"
+}
