@@ -63,8 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classMaps\Pokemon.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="Digester.cs" />
     <Compile Include="expressions\EmptyExpression.cs" />
+    <Compile Include="expressions\LearnsetExpression.cs" />
+    <Compile Include="expressions\LearnsetSelectorExpression.cs" />
+    <Compile Include="classMaps\Generation.cs" />
+    <Compile Include="extensions\StringExtensions.cs" />
     <Compile Include="IExpression.cs" />
     <Compile Include="expressions\PokemonExpression.cs" />
     <Compile Include="Main.cs" />
@@ -499,9 +505,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="classMaps\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -511,10 +515,10 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Copy SourceFiles="C:\Users\oxysoft\Documents\Visual Studio 2015\Projects\IntelliDex\IntelliDex\bin\Debug\IntelliDex.dll" DestinationFolder="C:\Program Files (x86)\Wox\Plugins\IntelliDex for Wox815114ea-a050-43da-92d1-3ba0eff60222">
+    <!--     <Copy SourceFiles="C:\Users\oxysoft\Documents\Visual Studio 2015\Projects\IntelliDex\IntelliDex\bin\Debug\IntelliDex.dll" DestinationFolder="C:\Program Files (x86)\Wox\Plugins\IntelliDex for Wox815114ea-a050-43da-92d1-3ba0eff60222">
     </Copy>
     <Exec Command="Wox reloadplugin" WorkingDirectory="C:\Program Files (x86)\Wox">
-    </Exec>
+    </Exec> -->
   </Target>
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.99.0\build\net20\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.99.0\build\net20\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

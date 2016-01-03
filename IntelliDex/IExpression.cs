@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Wox.Plugin;
 
 namespace IntelliDex {
-	interface IExpression {
+	public interface IExpression {
+		List<Result> MakeResults();
 		IExpression Refine(Digester digest);
 	}
 }

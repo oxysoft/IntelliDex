@@ -6,7 +6,7 @@ using IntelliDex.expressions;
 using Wox.Plugin;
 
 namespace IntelliDex {
-	class ExpressionParser {
+	public class ExpressionParser {
 		public static IExpression Parse(string query) {
 			Digester digest = new Digester(query);
 
@@ -16,11 +16,11 @@ namespace IntelliDex {
 			string type = digest.Digest();
 
 			if (Utils.IsPokemon(type)) {
-				return new PokemonExpression.Refine();
+				return new PokemonExpression().Refine(digest);
 			} else {
 			}
 
-			return null;
+			return new EmptyExpression();
 		}
 
 	}
