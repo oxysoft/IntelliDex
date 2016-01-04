@@ -28,9 +28,9 @@ namespace IntelliDex.expressions {
 
 			if (Utils.IsGen(def)) {
 				// default is level up when unspecified
-				return new LearnsetExpression(Pokemon, Data.GetMoveMethod("level up"), -1, -1);
+				return new LearnsetExpression(Pokemon, Data.GetMoveMethod("level up").Id, Utils.GetGen(def));
 			} else if (Utils.IsGame(def)) {
-				return new LearnsetExpression(Pokemon, Data.GetMoveMethod("level up"), -1, -1);
+				return new LearnsetExpression(Pokemon, Data.GetMoveMethod("level up").Id, -1, Utils.GetGameId(def));
 			}
 
 			return this;

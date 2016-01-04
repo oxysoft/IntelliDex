@@ -8,11 +8,19 @@ using IntelliDex;
 namespace Tests {
 	class Program {
 		static void Main(string[] args) {
+
+			var tacho = System.Diagnostics.Stopwatch.StartNew();
+
 			Utils.Init();
 			Data.Init();
-			
-			IExpression expr = ExpressionParser.Parse("torterra ls");
-			Console.WriteLine(expr);
+
+			tacho.Stop();
+			Console.WriteLine("Read all data in: {0}", tacho.Elapsed);
+
+			Console.WriteLine(ExpressionParser.Parse("pikachu ls"));
+			ExpressionParser.Parse("bulbasaur ls IV").MakeResults();
+			ExpressionParser.Parse("bulbasaur ls red").MakeResults();
+			ExpressionParser.Parse("bulbasaur ls 3").MakeResults();
 
 			Console.ReadLine();
 		}

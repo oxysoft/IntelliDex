@@ -19,7 +19,7 @@ namespace IntelliDex.expressions {
 
 			res.Add(new Result {
 				Title = Pokemon.Name.Capitalize(),
-				SubTitle = $"Weight: {Pokemon.Height}, Height: {Pokemon.Weight}",
+				SubTitle = $"WT: {Pokemon.Height}  |  HT: {Pokemon.Weight}",
 				IcoPath = $"Images\\pokemon-thumbs\\{Pokemon.Id}.png"
 			});
 			

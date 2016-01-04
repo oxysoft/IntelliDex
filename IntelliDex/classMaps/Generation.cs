@@ -12,7 +12,7 @@ namespace IntelliDex.classMaps {
 		public int Id { get; set; }
 
 		public override string ToString() {
-			return $"Identifier: {identifier}, Identifier: {Identifier}, Id: {Id}";
+			return $"Identifier: {Identifier}, Id: {Id}";
 		}
 	}
 
