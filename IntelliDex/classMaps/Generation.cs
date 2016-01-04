@@ -10,6 +10,10 @@ namespace IntelliDex.classMaps {
 		}
 
 		public int Id { get; set; }
+
+		public override string ToString() {
+			return $"Identifier: {identifier}, Identifier: {Identifier}, Id: {Id}";
+		}
 	}
 
 	public sealed class MappingGeneration : CsvClassMap<Generation> {

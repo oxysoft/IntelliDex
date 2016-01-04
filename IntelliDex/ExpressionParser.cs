@@ -16,7 +16,7 @@ namespace IntelliDex {
 			string type = digest.Digest();
 
 			if (Utils.IsPokemon(type)) {
-				return new PokemonExpression().Refine(digest);
+				return new PokemonExpression(Data.Pokemons.Find(p => p.Name.Equals(type))).Refine(digest);
 			} else {
 			}
 

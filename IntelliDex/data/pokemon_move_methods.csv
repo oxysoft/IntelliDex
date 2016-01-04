@@ -1,11 +1,11 @@
-id,identifier
-1,level-up
-2,egg
-3,tutor
-4,machine
-5,stadium-surfing-pikachu
-6,light-ball-egg
-7,colosseum-purification
-8,xd-shadow
-9,xd-purification
-10,form-change
+id,identifier,pretty_identifier
+1,level-up,Level up
+2,egg,Egg move
+3,tutor,Tutor
+4,machine,Machine
+5,stadium-surfing-pikachu,Stadium-Surfing-Pikachu
+6,light-ball-egg,Light-Ball-Egg
+7,colosseum-purification,Colosseum purification
+8,xd-shadow,XD shadow
+9,xd-purification,XD purification
+10,form-change,Form change

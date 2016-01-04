@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classMaps\Game.cs" />
+    <Compile Include="classMaps\MoveMethod.cs" />
     <Compile Include="classMaps\Pokemon.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Digester.cs" />

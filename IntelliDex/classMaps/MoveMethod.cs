@@ -1,0 +1,17 @@
+﻿using CsvHelper.Configuration;
+
+namespace IntelliDex.classMaps {
+	public class MoveMethod {
+		public int Id { get; set; }
+		public string Identifier { get; set; }
+		public string IdentifierPretty { get; set; }
+	}
+
+	public sealed class MappingMoveMethod : CsvClassMap<MoveMethod> {
+		public MappingMoveMethod() {
+			Map(m => m.Id).Index(0);
+			Map(m => m.Identifier).Index(1);
+			Map(m => m.IdentifierPretty).Index(2);
+		}
+	}
+}

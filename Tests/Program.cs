@@ -10,9 +10,8 @@ namespace Tests {
 		static void Main(string[] args) {
 			Utils.Init();
 			Data.Init();
-
-			IExpression expr = ExpressionParser.Parse("pikachu");
-
+			
+			IExpression expr = ExpressionParser.Parse("torterra ls");
 			Console.WriteLine(expr);
 
 			Console.ReadLine();
