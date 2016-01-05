@@ -6,12 +6,12 @@ using CsvHelper.Configuration;
 
 namespace IntelliDex.classMaps {
 	public class Pokemon {
-		public int Id { get; set; }
-		public int Species { get; set; }
-		public int Height { get; set; }
-		public int Weight { get; set; }
-		public int Exp { get; set; }
-		public int Order { get; set; }
+		public short Id { get; set; }
+		public short Species { get; set; }
+		public byte Height { get; set; }
+		public short Weight { get; set; }
+		public short Exp { get; set; }
+		public short Order { get; set; }
 		public string Name { get; set; }
 
 		public override string ToString() {

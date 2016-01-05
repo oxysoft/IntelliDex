@@ -2,7 +2,6 @@ using CsvHelper.Configuration;
 
 namespace IntelliDex.classMaps {
 	public class Game {
-
 		public int Id { get; set; }
 		public int GroupId { get; set; }
 		public string Identifier { get; set; }

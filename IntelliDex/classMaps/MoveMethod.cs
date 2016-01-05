@@ -2,7 +2,7 @@
 
 namespace IntelliDex.classMaps {
 	public class MoveMethod {
-		public int Id { get; set; }
+		public byte Id { get; set; }
 		public string Identifier { get; set; }
 		public string IdentifierPretty { get; set; }
 

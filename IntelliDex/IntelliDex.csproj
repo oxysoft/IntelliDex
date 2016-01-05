@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classMaps\Move.cs" />
     <Compile Include="classMaps\VersionGroup.cs" />
     <Compile Include="classMaps\Game.cs" />
     <Compile Include="classMaps\MoveLearn.cs" />

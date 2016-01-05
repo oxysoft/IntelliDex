@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IntelliDex;
+using IntelliDex.extensions;
 
 namespace Tests {
 	class Program {

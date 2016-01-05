@@ -6,12 +6,12 @@ using CsvHelper.Configuration;
 
 namespace IntelliDex.classMaps {
 	public class MoveLearn {
-		public int PokeId { get; set; }
-		public int VersionGroupId { get; set; }
-		public int MoveId { get; set; }
-		public int Method { get; set; }
-		public int Level { get; set; }
-		public int Order { get; set; }
+		public short PokeId { get; set; }
+		public byte VersionGroupId { get; set; }
+		public short MoveId { get; set; }
+		public byte Method { get; set; }
+		public byte Level { get; set; }
+		public byte Order { get; set; }
 	}
 
 	public sealed class MappingMoveLearn : CsvClassMap<MoveLearn> {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using IntelliDex.classMaps;
+using IntelliDex.extensions;
 using Wox.Plugin;
 
 namespace IntelliDex.expressions {
@@ -42,7 +43,7 @@ namespace IntelliDex.expressions {
 			if (VersionGroup == -1)
 				return Utils.MakeErrorResult("The version group could not be evaluated");
 
-			Dictionary<int, List<MoveLearn>> moveMethods = Data.MoveLearns[Pokemon.Id];
+			Dictionary<byte, List<MoveLearn>> moveMethods = Data.MoveLearns[Pokemon.Id];
 			List<MoveLearn> moves = moveMethods[Method.Id];
 
 
@@ -51,9 +52,13 @@ namespace IntelliDex.expressions {
 
 			List<Result> res = new List<Result>();
 
+			if (Method.Id == 1) {
+				moves.Sort((m1, m2) => m1.Level.CompareTo(m2.Level));
+			}
+
 			foreach (MoveLearn m in moves) {
 				Result r = new Result {
-					Title = "" + m.MoveId,
+					Title = "" + Data.Moves[m.MoveId].Name.Replace('-', ' ').Titlelize(),
 				};
 
 				if (Method.Id == 1) {
